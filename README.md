@@ -17,7 +17,7 @@
 [🔗 Formato](https://template-selector.ieee.org/secure/templateSelector/downloadTemplate?publicationTypeId=1&titleId=109&articleId=3&fileId=242 )
 
 
-## dependencias de Python
+## Dependencias de Python
 
 ```shell
 pip install -r requirements.txt
