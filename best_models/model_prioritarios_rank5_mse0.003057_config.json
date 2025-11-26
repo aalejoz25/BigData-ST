@@ -1,0 +1,41 @@
+{
+  "config": {
+    "architecture": [
+      32,
+      16
+    ],
+    "activation": "tanh",
+    "optimizer": {
+      "name": "adam",
+      "lr": 0.001
+    },
+    "dropout": 0.2,
+    "epochs": 200,
+    "batch_size": 16
+  },
+  "mse": 0.0030566267669200897,
+  "mae": 0.018198084086179733,
+  "residual_tests": {
+    "zero_mean": {
+      "cumple": true,
+      "p_value": 0.07439993123885492,
+      "mean": 0.0036606267448533432
+    },
+    "no_autocorrelation": {
+      "cumple": true,
+      "p_values": {
+        "lag_10": 0.16140105459343312,
+        "lag_20": 0.12129288655030142
+      }
+    },
+    "normality": {
+      "cumple": false,
+      "p_value": 4.32922416904498e-44
+    },
+    "homoscedasticity": {
+      "cumple": true,
+      "n_arch_effects": 0,
+      "first_arch_lag": null
+    }
+  }
+}
